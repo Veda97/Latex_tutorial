@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ZHAW BEAMER
+% Main
+% 
+% Authors:
+% Martin Oswald
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------
+%   DOCUMENT SPECIFICATION
+%----------------------------------------
+\documentclass[
+10pt, 
+xcolor=x11names,
+aspectratio=169,
+% notes
+% notes=only
+]{beamer}
+
+%----------------------------------------
+%   PREAMBLE: PACKAGES AND CONFIGURATIONS
+%----------------------------------------
+\usepackage{hyperref} 
+\usepackage{listings} 
+\input{preamble}
+\usepackage{tikz,lipsum,lmodern}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+%----------------------------------------
+%   REPORT INFORMATION
+%----------------------------------------
+
+\title{Technical TeXt with \LaTeX}
+\subtitle{}
+\author{Vedasri Godavarthi}
+\date{\today}
+
+% footer
+\lfooter{}
+\mfooter{\LaTeX workshop}
+
+
+%----------------------------------------
+%   TITLEPAGE
+%----------------------------------------
+\begin{document}
+\frame[plain]{\titlepage}
+
+%----------------------------------------
+%   TOC
+%----------------------------------------
+\begin{frame}{Table of Contents}
+\tableofcontents
+\end{frame}
+
+%----------------------------------------
+%   MAIN CONTENT
+%----------------------------------------
+\input{sections/section_1}
+\input{sections/section_2}
+
+%----------------------------------------
+%   BIBLIOGRAPHY
+%----------------------------------------
+\begin{frame}[allowframebreaks]{Bibliography}
+\printbibliography
+\end{frame}
+
+%----------------------------------------
+\end{document}  
