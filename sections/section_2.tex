@@ -1,0 +1,141 @@
+% !TEX root = ../main.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modified by Vedasri Godavarthi
+% Sourced from ZHAW BEAMER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------
+%   SECTION TITLE
+%----------------------------------------
+\section{Syntax}
+\label{sec:introduction}
+\frame[plain]{\sectionpage}
+
+
+%----------------------------------------
+%   SECTION CONTENT
+%----------------------------------------
+\begin{frame}{Syntax}
+\begin{table}[]
+    \centering
+    \begin{footnotesize}
+    \begin{tabular}{|l|c|l|c|}
+    \hline
+     Command & Function & Command & Function \\
+      \hline
+     \texttt{\textbackslash title\{\}} & Title & \texttt{\textbackslash author\{\}} & Author\\
+     \hline
+     \texttt{\textbackslash affiliation\{\}} & Affiliation & \texttt{\textbackslash maketitlepage} & creates titlepage\\
+     \hline
+     \texttt{\textbackslash date\{\}} & Today is the default date & \texttt{\textbackslash date\{yesterday\}} & Yesterday or can specify\\
+     \hline
+    \texttt{\textbackslash section\{\}} & Numbered section & \texttt{\textbackslash subsection\{\}} & Numbered subsection\\
+     \hline
+     \texttt{\textbackslash section*\{\}} & Unnumbered section & \texttt{\textbackslash subsection*\{\}} & Unnumbered subsection\\
+     \hline
+     \texttt{\textbackslash textbf*\{\}} & Bold text & \texttt{\textbackslash textit*\{\}} & Italic text\\
+     \hline
+     \texttt{\textbackslash textrm*\{\}} & Normal text & \texttt{\textbackslash textcolor*\{\}} & Colored text with specific color\\
+     \hline
+     \texttt{\textbackslash newpage} & Inserts a new page & \texttt{\textbackslash pagebreak} & Splits the page\\
+     \hline
+     \texttt{\textbackslash centering} & Centers & \texttt{\textbackslash caption} & Caption for figure\\
+     \hline
+     \texttt{\textbackslash label\{\}} & label for object & \texttt{\textbackslash ref\{\}} & Refers the object\\
+     \hline
+     \texttt{\textbackslash cite\{\}} & Citation as number & \texttt{\textbackslash citep\{\}} & Citation with authors\\
+     \hline
+      \texttt{ \%} & Comment a line & \texttt{\textbackslash \%} & \%\\
+     \hline
+      \texttt{\textbackslash \{ \textbackslash\}} & \{\} & \texttt{\$ \$}  & can create math equations inline\\
+     \hline
+    \end{tabular}
+    \end{footnotesize}
+    \caption{Most used commands}
+    \label{tab:syntax01}
+\end{table}
+
+\end{frame}
+%----------------------------------------
+%   SECTION CONTENT
+%----------------------------------------
+\begin{frame}{Syntax}
+\begin{table}[]
+    \centering
+    \begin{footnotesize}
+    \begin{tabular}{|l|c|}
+    \hline
+     Command & Function \\
+      \hline
+     \texttt{\textbackslash begin\{document\} .... \textbackslash end\{document\}} & Creates document\\
+     \hline
+     \texttt{\textbackslash begin\{abstract\} .... \textbackslash end\{abstract\}} & Creates abstract\\
+     \hline
+      \texttt{\textbackslash begin\{figure\} .... \textbackslash end\{figure\}} & Creates figure environment\\
+     \hline
+     \texttt{\textbackslash includegraphics\{\}} & Includes figure inside environment\\
+     \hline
+     \texttt{\textbackslash begin\{equation\} .... \textbackslash end\{equation\}} & Creates equation environment\\
+     \hline
+     \texttt{\textbackslash begin\{itemize\} .... \textbackslash end\{itemize\}} & Creates lists/items environment\\
+     \hline
+     \texttt{\textbackslash item} & Creates a bullet point inside itemize\\
+     \hline
+     \texttt{\textbackslash begin\{verbatim\} .... \textbackslash end\{verbatim\}} & Creates environment that can display code\\
+     \hline
+    \end{tabular}
+    \end{footnotesize}
+    \caption{Basic environments}
+    \label{tab:syntax02}
+\end{table}
+
+\end{frame}
+%----------------------------------------
+%   SECTION CONTENT
+%----------------------------------------
+\begin{frame}{Packages}
+\begin{table}[]
+    \centering
+    \begin{footnotesize}
+    \begin{tabular}{|l|l|}
+    \hline
+     Command & Function \\
+      \hline
+     \texttt{\textbackslash usepackage\{graphicx\}} & Package for figures\\
+     \hline
+   \texttt{\textbackslash usepackage\{subcaption\}} & Package for subfigures\\
+   \hline
+   \texttt{\textbackslash usepackage\{xcolor\}} & Package for using colors in objects\\
+   \hline
+   \texttt{\textbackslash usepackage\{hyperref\}} & Package for URLs\\
+   \texttt{\textbackslash hyperref\{url here\}\{text here\}} & Command for hyperrefs\\
+   \hline
+    \end{tabular}
+    \end{footnotesize}
+    \caption{Most used packages}
+    \label{tab:syntax03}
+\end{table}
+
+\end{frame}
+
+%----------------------------------------
+%   SECTION TITLE
+%----------------------------------------
+\section{Other resources}
+\label{sec:resources}
+\frame[plain]{\sectionpage}
+
+%----------------------------------------
+%   SECTION CONTENT
+%----------------------------------------
+\begin{frame}{Other resources}
+\begin{itemize}
+    \item Overleaf: \href{https://www.overleaf.com}{https://www.overleaf.com}
+    \item Latex primer: \href{https://www.colorado.edu/aps/latex-primer}{https://www.colorado.edu/aps/latex-primer} 
+    \item Overleaf documentation: \href{https://www.overleaf.com/learn}{https://www.overleaf.com/learn}
+    \item Beamer: \href{https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://web.mit.edu/rsi/www/pdfs/beamer-tutorial.pdf&ved=2ahUKEwi_ioOB7taFAxXBI0QIHVGcDU4QFnoECBcQAQ&usg=AOvVaw0jHOs8KPLsmYjkpyqf2XM8}{Fun with beamer by Prathik Naidu and Adam Pahlavan}
+    \item Stack Overflow
+\end{itemize}
+    
+\end{frame}
